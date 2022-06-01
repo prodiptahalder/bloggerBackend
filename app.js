@@ -50,6 +50,7 @@ app.use('*', (req, res, next) => {
 
 //MIDDLEWARE
 
+app.get('/', (req, res)=>{res.send(`Welcome to Blogger REST API Service \n Documentation: https://github.com/prodiptahalder/bloggerBackend/tree/main/API/Documentation`);});
 
 //ROUTES
 
