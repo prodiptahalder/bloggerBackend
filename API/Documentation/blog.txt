@@ -1,0 +1,34 @@
+/blogs/
+request-type:Post
+body:Form-Data({
+    title:String
+    body:String
+    author:String
+    tags:ObjectId
+    image:File
+})
+desc:Create a blog
+
+/blogs/pending
+request-type:Get
+desc:Get list of unverified blogs
+
+/blogs/verified
+request-type:Get
+desc:Get list of verified blogs
+
+/blogs/:id
+request-type:Get
+desc:Get a blog
+
+/blogs/recent/:n
+request-type:Get
+desc:Get n recent blogs
+
+/blogs/:id
+request-type:Patch
+desc:Verify a blog
+
+/blogs/:id
+request-type:Delete
+desc:Delete a blog

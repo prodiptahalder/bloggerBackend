@@ -1,0 +1,18 @@
+/tags/
+request-type:Get
+desc:Get all Tags
+
+/tags/
+request-type:Post
+body:{
+    name:String
+}
+desc:Create Tags
+
+/tags/:id
+request-type:Get
+desc:Get list of verified posts with same tags
+
+/tags/:id/:n
+request-type:Get
+desc:Get list of n verified posts with same tags

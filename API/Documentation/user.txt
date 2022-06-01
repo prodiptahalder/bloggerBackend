@@ -1,0 +1,13 @@
+/users/login
+request-type:Post
+body:{
+    email:String
+    password:String
+}
+
+/users/signup
+request-type:Post
+body:{
+    email:String
+    password:String
+}
