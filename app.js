@@ -53,7 +53,7 @@ app.use('*', (req, res, next) => {
 
 //ROUTES
 
-app.use('/', (res,req) => {res.json({message:"hello"})});
+app.get('/', (res,req) => {res.send("Welcome to Blogger")});
 
 //userRoutes
 const userRoutes = require('./API/Routes/user');
