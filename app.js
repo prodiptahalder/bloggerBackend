@@ -53,6 +53,8 @@ app.use('*', (req, res, next) => {
 
 //ROUTES
 
+app.use('/', (res,req) => {res.json(message:"hello")});
+
 //userRoutes
 const userRoutes = require('./API/Routes/user');
 app.use('/users', userRoutes);
