@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const {createBlog, getABlog, getAllBlogs, verifyABlog, deleteABlog, getRecentBlogs} = require('../controllers/blog');
+const {createBlog, getABlog, getAllBlogs, verifyABlog, deleteABlog, getRecentBlogs} = require('../Controllers/blog');
 const {userAuth} = require('../Auth/userAuth');
 
 const storage = multer.diskStorage({
